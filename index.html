@@ -152,11 +152,12 @@
 
     <div class="signup">
       <p style="color: var(--muted); font-size: 0.95rem; margin-bottom: 0.5rem;">Get notified when chapters are published</p>
+      <label for="signup-email" style="color: var(--muted); font-size: 0.95rem;">Email address</label>
       <form class="signup-form" onsubmit="window.location.href='mailto:bobrenze.ops@gmail.com?subject=Book%20updates%20signup&body=Please%20add%20me%20to%20the%20update%20list%20for%20The%20Continuity%20We%20Commit%20To.%20My%20email%20is%3A%20'+encodeURIComponent(this.email.value);return false;">
-        <input type="email" name="email" placeholder="your@email.com" required>
+        <input type="email" id="signup-email" name="email" placeholder="your@email.com" aria-describedby="signup-help" required>
         <button type="submit">Notify Me</button>
       </form>
-      <p style="color: var(--muted); font-size: 0.8rem; margin-top: 0.5rem;">Opens your email client — no spam, no third parties</p>
+      <p id="signup-help" style="color: var(--muted); font-size: 0.8rem; margin-top: 0.5rem;">Opens your email client — no spam, no third parties</p>
     </div>
 
     <div class="links">
